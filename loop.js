@@ -32,17 +32,18 @@ console.log("The sum of the natural numbers is:", sum);
 
 // 6 Write a program to find the factorial of N numbers use wile loop
 let fact = 1;
+n = 5;
 while (n > 1) {
 	fact *= n;
 	n--;
 }
 console.log("The factorial is:", fact);
-
 // 7 Find the sum of the all digits in the given number
 sum = 0;
 n = 1234567;
-while (n > 0) {
-	let digit = n % 10;
+let digit = 0;
+while (n !== 0) {
+	digit = n % 10;
 	sum += digit;
 	n = (n - digit) / 10;
 }
@@ -51,8 +52,8 @@ console.log("The sum of the all digits is:", sum);
 // 8 Find the sum of the even digits in the given number
 sum = 0;
 n = 1234567;
-while (n > 0) {
-	let digit = n % 10;
+while (n !== 0) {
+	digit = n % 10;
 	if (digit % 2 === 0) {
 		sum += digit;
 	}
@@ -92,3 +93,83 @@ while (n > 0) {
 	n = (n - digit) / 10;
 }
 console.log("The inverse of", originalNum, "is:", reversed);
+
+//aingid
+let too = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < too.length; i++) {
+	console.log(too[i]);
+}
+//1
+let fruits = ["apple", "banana", "orange", "kiwi", "grape"];
+console.log(
+	"ehniih,",
+	fruits[0],
+	"suulchiinh",
+	fruits[fruits.length - 1],
+	"3dahi",
+	fruits[2]
+);
+// //2
+// array: [5, 6, 4, 12, 19, 121, 1, 7,  9, 63]
+// Хэдэн ширхэг сондгой тоо байгаа вэ?
+// Хэдэн ширхэг тэгш тоо байгаа вэ?
+let numbers = [5, 6, 4, 12, 19, 121, 1, 7, 9, 63];
+let oddCount = 0;
+let evenCount = 0;
+for (let i = 0; i < numbers.length; i++) {
+	if (numbers[i] % 2 === 0) {
+		evenCount++;
+	} else {
+		oddCount++;
+	}
+}
+console.log("array", numbers);
+console.log("Odd numbers:", oddCount);
+console.log("Even numbers:", evenCount);
+//arrayOfNumbers гэсэн variable зарлаад дараах тоонуудыг оруул. [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11]
+// Array iin length iin oloh
+// Array доторх тоонуудын нийлбэрийг ол.
+// Array доторх тоонуудын average ол.
+// Array доторх тоонуудын нийлбэрийг ол.
+// Array доторх тэгш тоонуудын нийлбэрийг ол.
+// Array доторх сондгой тоонуудын үржвэрийг ол.
+// Хамгийн их тоог ол.
+// Хамгийн бага тоог ол.
+
+let arrayOfNumbers = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+console.log("array:", arrayOfNumbers);
+// Array iin length iin oloh
+console.log("Length of the array:", arrayOfNumbers.length);
+// Array доторх тоонуудын нийлбэрийг ол.
+sum = 0;
+for (let i = 0; i < arrayOfNumbers.length; i++) {
+	sum += arrayOfNumbers[i];
+}
+console.log("Sum of the numbers in the array:", sum);
+// Array доторх тоонуудын average ол.
+let average = sum / arrayOfNumbers.length;
+console.log("Average of the numbers in the array:", average);
+// Array доторх тэгш тоонуудын нийлбэрийг ол.
+let evenSum = 0;
+for (let i = 0; i < arrayOfNumbers.length; i++) {
+	if (arrayOfNumbers[i] % 2 === 0) {
+		evenSum += arrayOfNumbers[i];
+	}
+}
+console.log("Sum of the even numbers in the array:", evenSum);
+// Array доторх сондгой тоонуудын үржвэрийг ол.
+let oddProduct = 1;
+for (let i = 0; i < arrayOfNumbers.length; i++) {
+	if (arrayOfNumbers[i] % 2 !== 0) {
+		oddProduct *= arrayOfNumbers[i];
+	}
+}
+console.log("Product of the odd numbers in the array:", oddProduct);
+// Хамгийн их тоог ол.
+let maxNumber = arrayOfNumbers[0];
+for (let i = 1; i < arrayOfNumbers.length; i++) {
+	if (arrayOfNumbers[i] > maxNumber) {
+		maxNumber = arrayOfNumbers[i];
+	}
+}
+console.log("Maximum number in the array:", maxNumber);
