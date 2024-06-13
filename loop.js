@@ -126,7 +126,7 @@ for (let i = 0; i < numbers.length; i++) {
 console.log("array", numbers);
 console.log("Odd numbers:", oddCount);
 console.log("Even numbers:", evenCount);
-//arrayOfNumbers гэсэн variable зарлаад дараах тоонуудыг оруул. [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11]
+//3 arrayOfNumbers гэсэн variable зарлаад дараах тоонуудыг оруул. [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11]
 // Array iin length iin oloh
 // Array доторх тоонуудын нийлбэрийг ол.
 // Array доторх тоонуудын average ол.
@@ -138,18 +138,18 @@ console.log("Even numbers:", evenCount);
 
 let arrayOfNumbers = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
 console.log("array:", arrayOfNumbers);
-// Array iin length iin oloh
+// 3.1 Array iin length iin oloh
 console.log("Length of the array:", arrayOfNumbers.length);
-// Array доторх тоонуудын нийлбэрийг ол.
+// 3.2 Array доторх тоонуудын нийлбэрийг ол.
 sum = 0;
 for (let i = 0; i < arrayOfNumbers.length; i++) {
 	sum += arrayOfNumbers[i];
 }
 console.log("Sum of the numbers in the array:", sum);
-// Array доторх тоонуудын average ол.
+// 3.3 Array доторх тоонуудын average ол.
 let average = sum / arrayOfNumbers.length;
 console.log("Average of the numbers in the array:", average);
-// Array доторх тэгш тоонуудын нийлбэрийг ол.
+// 3.4 Array доторх тэгш тоонуудын нийлбэрийг ол.
 let evenSum = 0;
 for (let i = 0; i < arrayOfNumbers.length; i++) {
 	if (arrayOfNumbers[i] % 2 === 0) {
@@ -157,7 +157,7 @@ for (let i = 0; i < arrayOfNumbers.length; i++) {
 	}
 }
 console.log("Sum of the even numbers in the array:", evenSum);
-// Array доторх сондгой тоонуудын үржвэрийг ол.
+// 3.5Array доторх сондгой тоонуудын үржвэрийг ол.
 let oddProduct = 1;
 for (let i = 0; i < arrayOfNumbers.length; i++) {
 	if (arrayOfNumbers[i] % 2 !== 0) {
@@ -165,7 +165,7 @@ for (let i = 0; i < arrayOfNumbers.length; i++) {
 	}
 }
 console.log("Product of the odd numbers in the array:", oddProduct);
-// Хамгийн их тоог ол.
+// 3.6 Хамгийн их тоог ол.
 let maxNumber = arrayOfNumbers[0];
 for (let i = 1; i < arrayOfNumbers.length; i++) {
 	if (arrayOfNumbers[i] > maxNumber) {
