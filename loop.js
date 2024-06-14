@@ -94,7 +94,7 @@ while (n > 0) {
 }
 console.log("The inverse of", originalNum, "is:", reversed);
 
-//aingid
+// ------------------- aingid ------------------
 let too = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 for (let i = 0; i < too.length; i++) {
 	console.log(too[i]);
