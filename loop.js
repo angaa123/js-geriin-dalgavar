@@ -173,3 +173,12 @@ for (let i = 1; i < arrayOfNumbers.length; i++) {
 	}
 }
 console.log("Maximum number in the array:", maxNumber);
+
+// 3.7 Хамгийн бага тоог ол.
+let minNumber = arrayOfNumbers[0];
+for (let i = 1; i < arrayOfNumbers.length; i++) {
+	if (arrayOfNumbers[i] < minNumber) {
+		minNumber = arrayOfNumbers[i];
+	}
+}
+console.log("Minimum nuber is the array:", minNumber);
