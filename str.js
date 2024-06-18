@@ -1,4 +1,3 @@
-// myAge гэсэн хувьсагч зарлаж. 25 аас дээш байвал console дээр “above 25” гэж гаргах, 25 аас доош байвал console дээр “below 25” гэж гаргах
 let myAge = 25;
 if (myAge > 25) {
 	console.log("above 25");
@@ -6,7 +5,7 @@ if (myAge > 25) {
 	console.log("below 25");
 }
 // n хувьсагчын утгын дагуу сондгой эсвэл тэгш олж хэвлэнэ. жишээ нь: n = 2 байвал it’s even number гэж console дээр гарж ирэх
-let n = 2;
+n = 2;
 if (n % 2 == 0) {
 	console.log("it's even number");
 } else {

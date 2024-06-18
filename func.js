@@ -2,7 +2,6 @@
 // function hoyou_toonii_niilber(a, b) {
 // 	console.log(a, b, "hoyor too nii niilber", a + b);
 // }
-
 let a = 10;
 let b = 20;
 function hevel() {

@@ -2,7 +2,6 @@
 for (let i = 1; i <= 10; i++) {
 	console.log(i);
 }
-
 // 2 write all odd numbers between 1 and 10 in console.log use for loop
 console.log("Odd Numbers:");
 for (let i = 1; i <= 10; i += 2) {
