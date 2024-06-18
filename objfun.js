@@ -1,4 +1,5 @@
 // Өгөгдсөн 2 тооны ихийг олох функц бич.
+console.log("working");
 function max(a, b) {
 	if (a > b) {
 		return a;
@@ -16,7 +17,10 @@ function findIndex(arr, num) {
 	}
 	return -1;
 }
-console.log("[1,2,3,4,5] d 3 baina uu", findIndex([1, 2, 3, 4, 5], 3));
+console.log(
+	"[1,2,3,4,5] d baigaa  3 iin inedx n :",
+	findIndex([1, 2, 3, 4, 5], 3)
+);
 // Өгөгдсөн тэмдэгт мөрөөс -аас өгөгдсөн тэмдэгт байгаа эсэхийг олох функц бич. Тухайн тэмдэгт байвал индексийг буцаана. Байхгүй бол -1 буцаана.
 function findCharIndex(str, char) {
 	for (let i = 0; i < str.length; i++) {
@@ -26,7 +30,7 @@ function findCharIndex(str, char) {
 	}
 	return -1;
 }
-console.log(findCharIndex("hello", "l"));
+console.log("l iin index n", findCharIndex("hello", "l"));
 // Өгөгдсөн array - ийн дундажыг олох функц бич.
 function average(arr) {
 	let sum = 0;
@@ -35,7 +39,7 @@ function average(arr) {
 	}
 	return sum / arr.length;
 }
-console.log(average([1, 2, 3, 4, 5]));
+console.log([1, 2, 3, 4, 5], "dundaj n ", average([1, 2, 3, 4, 5]));
 // Өгөгдсөн array - ийн нийлбэрийг олох функц бич.
 function sum(arr) {
 	let sum = 0;
@@ -44,7 +48,7 @@ function sum(arr) {
 	}
 	return sum;
 }
-console.log(sum([1, 2, 3, 4, 5]));
+console.log("sum = ", sum([1, 2, 3, 4, 5]));
 
 // Өгөгдсөн тоо анхны эсэхийг олох функц бич.
 function isPrime(num) {
@@ -55,7 +59,12 @@ function isPrime(num) {
 	}
 	return true;
 }
-console.log(isPrime(11));
+let n = 11;
+if (isPrime(n)) {
+	console.log(n, "is a prime number");
+} else {
+	console.log(n, "is not a prime number");
+}
 // Palindrome too eseh jishee ni: input: 121 output: true, input: -121 output: false, input: 12  output: false
 function isItPalindrome(num) {
 	let reversed = 0;
@@ -71,7 +80,12 @@ function isItPalindrome(num) {
 		return false;
 	}
 }
-console.log(isItPalindrome(121));
+n = 121;
+if (isItPalindrome(n)) {
+	console.log(n, "is a palindrome number");
+} else {
+	console.log(n, "is not a palindrome number");
+}
 // Ugugdsun string urvuulna gargah jishee ni: input: hello output: olleh
 function isItPalindrome(str) {
 	let reversedstr = "";
@@ -80,7 +94,7 @@ function isItPalindrome(str) {
 	}
 	return reversedstr;
 }
-console.log(isItPalindrome("hello"));
+console.log("hello urvuulsen uldegdel", isItPalindrome("hello"));
 //---------------------------
 let students = [
 	{
