@@ -138,9 +138,9 @@ function getTop5Products(data) {
 			}
 		}
 	}
-	return data.slice(0, 5);
+	return data;
 }
-console.log("Top 5 Products:", getTop5Products(data));
+console.log("Top 5 Products:", getTop5Products(data).slice(0, 5));
 //Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.
 function getBottom5Products(data) {
 	for (let i = 0; i < data.length; i++) {
@@ -152,6 +152,6 @@ function getBottom5Products(data) {
 			}
 		}
 	}
-	return data.slice(0, 5);
+	return data;
 }
-console.log("Bottom 5 Products:", getBottom5Products(data));
+console.log("Bottom 5 Products:", getBottom5Products(data).slice(0, 5));
